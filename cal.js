@@ -10,7 +10,7 @@ function sol(){
     display.innerText=y
 }
 
-function del(){
+function clr(){
     const display=document.getElementById('chiffre')
     display.innerText = ""
 }
@@ -32,9 +32,9 @@ function cm(){
     display1.innerText="0"
 }
 
-function x3(){
+function del(){
     const display=document.getElementById('chiffre')
-    display.innerText=Math.pow(display.innerText,3)
+    display.innerText=display.innerText.slice(0,-1)
 }
 
 function x2(){
