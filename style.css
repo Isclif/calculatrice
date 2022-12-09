@@ -1,18 +1,25 @@
+
 body{
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     background: linear-gradient(15deg,rgb(162, 3, 149)25%,rgb(130, 4, 73)50%);
 }
 
-
 /****MAIN-PRINCIPLE*****/
 
+main{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
 main .principale{
+    
     width: 349px;
     height: 425px;
     background-color: whitesmoke;
-    margin-top: 29%;
-    margin-bottom: 29%;
     border-radius: 5px;
     padding: 1px 11px;
     box-shadow: 0px 0px 3px 3px rgb(0, 0, 0);
@@ -167,4 +174,32 @@ main .affichage.noir{
 }
 main .line2.bas{
     border-bottom: 0px ;
+}
+
+@media screen and (max-width: 600px) {
+    main .principale{
+        width: 300px;
+        height: 410px;
+    }
+    main .affichage{
+        width: 295px;
+    }
+        
+    main #bouton{
+        margin: 3px;
+        width: 55px;
+    }
+    main #bouton1{
+        margin: 5px;
+        width: 55px;
+        height: 47px;
+    }
+    main .line2{
+        width: 210px;
+        display: flex;
+        border-bottom: 1px solid rgb(140, 140, 140);
+    }
+    main .section2{
+        margin-left: -18px;
+    }
 }
