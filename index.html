@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <main>
+        <div class="principale noir">
+            <div class="dark active">
+                <i class="icon"></i>
+            </div>
+            <div class="affichage noir">
+                <p id="chiffre1">M</p>
+                <span id="chiffre"></span>.
+            </div>
+            <br>
+            <div class="content">
+                <div class="section1 noir">
+                    <div class="border">
+                        <div class="line1">
+                            <div id="bouton" onclick="del()">C</div>
+                            <div id="bouton" onclick="x3()">x3</div>
+                            <div id="bouton" onclick="x2()">x2</div>
+                        </div>
+
+                        <div class="line2 bas">
+                            <div id="bouton" onclick="m()">M</div>
+                            <div id="bouton" onclick="rm()">RM</div>
+                            <div id="bouton" onclick="cm()">CM</div>
+                        </div>
+                    </div>
+
+                    <div class="line3">
+                        <div id="bouton" onclick="dis('7')">7</div>
+                        <div id="bouton" onclick="dis('8')">8</div>
+                        <div id="bouton" onclick="dis('9')">9</div>
+                    </div>
+                    <div class="line4">
+                        <div id="bouton" onclick="dis('4')">4</div>
+                        <div id="bouton" onclick="dis('5')">5</div>
+                        <div id="bouton" onclick="dis('6')">6</div>
+                    </div>
+                    <div class="line5">
+                        <div id="bouton" onclick="dis('1')">1</div>
+                        <div id="bouton" onclick="dis('2')">2</div>
+                        <div id="bouton" onclick="dis('3')">3</div>
+                    </div>
+                    <div class="line6">
+                        <div id="bouton" onclick="dis('0')">0</div>
+                        <div id="bouton" onclick="dis('.')">.</div>
+                        <div id="bouton"onclick="dis('-')">+/-</div>
+                    </div>
+                </div>
+                <div class="section2 noir">
+                    <div id="bouton" onclick="dis('+')" >+</div>
+                    <div id="bouton" onclick="dis('-')">-</div>
+                    <div id="bouton" onclick="dis('/')">/</div>
+                    <div id="bouton" onclick="dis('*')">*</div>
+                    <div id="bouton1" onclick="sol()">=</div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <script src="cal.js"></script>
+</body>
+</html>

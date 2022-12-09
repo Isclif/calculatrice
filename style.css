@@ -1,0 +1,170 @@
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(15deg,rgb(162, 3, 149)25%,rgb(130, 4, 73)50%);
+}
+
+
+/****MAIN-PRINCIPLE*****/
+
+main .principale{
+    width: 349px;
+    height: 425px;
+    background-color: whitesmoke;
+    margin-top: 29%;
+    margin-bottom: 29%;
+    border-radius: 5px;
+    padding: 1px 11px;
+    box-shadow: 0px 0px 3px 3px rgb(0, 0, 0);
+}
+
+/****MAIN-AFFICHAGE*****/ 
+
+main .affichage{
+    width: 339px;
+    outline: 1px solid;
+    border-radius: 6px;
+    text-align: end;
+    padding-right: 6px;
+}
+
+/****MAIN-CONTENT*****/ 
+
+main .content{
+display: flex;
+}
+
+
+/****SECTION1*****/ 
+
+main .line1{
+    width: 249px;
+    display: flex;
+}
+
+main .line2{
+    width: 249px;
+    display: flex;
+    border-bottom: 1px solid rgb(140, 140, 140);
+}
+
+main .line3{
+    width: 249px;
+    display: flex;
+}
+main .line4{
+    width: 249px;
+    display: flex;
+}
+main .line5{
+    width: 249px;
+    display: flex;
+}
+main .line6{
+    width: 249px;
+    display: flex;
+}
+
+/****SECTION2*****/
+
+main .section2{
+margin-left: 15px;
+}
+main .section2 #bouton{
+    margin-bottom: 12px;
+}
+
+/****BOUTON*****/
+
+main #bouton{
+    margin: 5px;
+    width: 65px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    padding: 14px 4px;
+    box-shadow: 0px 0px 3px 3px rgb(140, 140, 140);
+    font-weight: bolder;
+}
+main #bouton:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s ease all; 
+}
+
+main #bouton:active{
+    background-color: black;
+    color: white;
+}
+
+/****BOUTON-egal*****/
+
+main #bouton1{
+    margin: 5px;
+    width: 65px;
+    height: 65px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    padding: 14px 4px;
+    box-shadow: 0px 0px 3px 3px rgb(140, 140, 140);
+    font-weight: bolder;
+}
+main #bouton1:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s ease all; 
+    font-size: 22px;
+}
+
+main #bouton1:active{
+    background-color: black;
+    color: white;
+}
+
+
+/****THEME-noir******/
+.dark{
+    position: absolute;
+    top: 31px;
+    right: 31px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.dark.active{
+    color: black;
+}
+
+.dark.active::before{
+    background-color: white;
+}
+
+.dark::before{
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform:translate(-50%, -50%) ;
+    border-radius: 50%;
+    background-color: black;
+    z-index: -1;
+}
+
+main .principale.noir{
+    background-color: black;
+}
+
+main .affichage.noir{
+    outline: 1px solid white;
+    color: white;
+}
+main .line2.bas{
+    border-bottom: 0px ;
+}
